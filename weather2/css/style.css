@@ -1,0 +1,47 @@
+
+.header{
+    background-image: url("weather.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top left;
+    position: relative;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid black;
+}
+.box{
+    background-color: lightgray;
+    text-align:center;
+    padding: 15px;
+    border: 1px solid black;
+}
+
+.column{
+    float: left;
+    width: 25%;
+    padding: 15px;
+}
+.columnRadio{
+    float: left;
+    width: 48%;
+    padding: 10px;
+}
+.row:after{
+    
+    content: "";
+    padding: 5px;
+    display: table;
+    clear: both;
+    text-align:center;
+
+}
+
+@media screen and (max-width:600px){
+    .column{
+        width:100%;
+    }
+    .columnRadio{
+        width:100%;
+    }
+}
+

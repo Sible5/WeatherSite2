@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's Weather</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    
+
+</head>
+<body>
+       <div class="header">
+           <h1>Today's Weather</h1>
+       </div>
+       <div class="box">
+       <div class="row">
+        <h3>Please Enter the Zip Code to see weather conditions.</h3>
+
+        <form id="zipCode"> 
+            <label for="zipCode">Zip Code:</label><br>
+            <input id="zipCodeData" type="text" maxlength="5"><br>
+            <input type="submit"  value="Submit">
+        </form>
+
+        </div>
+        <h4>Display Units:</h4>
+        <div class="row">
+
+        <form  id="choiceForm">
+            <div class="columnRadio">
+                <input type="radio" name="choice" id="var1" value="Imperial" checked>
+                <label for="var1">Imperial</label><br>
+            </div>
+            <div class="columnRadio">
+                <input type="radio" name="choice" id="var2" value="Metric">
+                <label for="var2">Metric</label><br>
+            </div>
+            
+        </form>
+        </div>
+        </div>
+        </div>
+       <div id="hideData" class="box" style="display:none">
+           <h2>Weather for: <span id="cityName"></span></h2>
+       
+
+       <div  class="row" >
+           
+           <div class="column">
+                <h2>Temperature: <span id="temperature"></span><span>&#176;</span><span id="tempImp"></span></h2>
+                
+            </div>
+
+            <div class="column">
+                <h2>Feels Like: <span id="FeelsLike"></span><span>&#176;</span><span id="FeelsImp"></span></h2>
+            </div>
+
+            <div class="column">
+            <h2>Wind Speed: <span id="WindSpeed"></span><span id="WindImp"></span></h2>
+        </div>
+        <div class="column">
+            <h2>Sky Conditions: <span id="sky"></span></h2>
+         </div>
+        </div>
+    </div>
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+
+
+</body>
+</html>
